@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Tipos de variables
+        //Variables primitivas, son variables que contienen un unico valor primitivo, como un numero, cadena de texto, o un valor booleano
+
+        var numero = 80;
+        var texto = "Hola buenos dias";
+        var booleano = true;
+
+        console.log(numero, texto, booleano)
+
+
+        //Variables no primitivas, son variables que contienen un objeto. Dichos objetos pueden ser de diferentes tipos, como matrices, funciones y otros objetos.
+
+        var persona = {nombre: "luis", edad: 45, nacionalidad: "colombiano"};
+        var frutas = ["mango", "pera", "manzana", "piña"];
+
+
+        //Variables globales, son variables que se definen fuera de una funcion y pueden ser utilizadas en cualquier parte del programa
+
+        var mensaje = "Buenos dias";
+
+        function saludar(){
+            console.log(mensaje);
+        }
+        saludar();
+
+
+        //Variabls locales, son variables qque se definen dentro de una funcion y que solo pueden ser utilizadas dentro del cuerpo de la funcion.
+
+        function sumarNumeros(num1, num2, num3){
+            var suma = num1 + num2 + num3;
+            return suma;
+        }
+        console.log(sumarNumeros(5, 10, 7))
+
+
+        //Constantes, son variables que se definen utilizando la palabra clave const y que no pueden cambiar su valor una vez ue se han asignado
+
+        const nit = 234567890;
+        const URL_API = "https://miapi.com";
+
+
+
+        //Usar let y const, A partir de ECMAScript 6, es recomendable el uso la palabra let y const en vez de var para la declaracion de variables.
+
+        let fruta = "Mango";
+        const PI = 3.1416;
+
+
+        //Concatenacion de cadenas, se pueden unir dos o mas cadenas de texto haciendo uso del operador +.
+
+        let nombre = "Roberto";
+        let apellido = "Castilla";
+        let nombreCompleto = nombre + " " + apellido;
+        console.log(nombreCompleto);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
