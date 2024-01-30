@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ejercicio # 1
+        //Esta sentencia nos permite ejecutar un determinado bloque de codigo si especificamente cumple una condicion.
+        
+        let edad = prompt("Favor ingresar edad actual")
+        if (edad >= 18) {
+            alert("Eres un ciudadano mayor de edad")
+        }
+
+
+        //Sentencia else, se usa junto con el if para la ejecucion de un bloque de codigo en caso que no se pueda cumplir la condicion.
+
+        //Ejercicio # 2
+        //Escribir programa que permita almacenar una cadena de caracteres en la variable contraseña, se le pide al usuario ingresar la contraseña, si esta coincide con la almacenada en la variable,
+        //debe generar el mensaje "Ingreso satisfactorio. de lo contrario le arrojara el mensaje por pantalla que ingrese nuevamen su contrasea". no se tienen encuenta mayusculas y minusculas.
+
+        const pasw = "bebe";
+        let paswIngresado = prompt("Por favor ingresar su contraseña: ");
+        if( pasw == paswIngresado.toLowerCase()) {
+            alert("Estimado usuario, su ingreso es satisfactorio");
+        }else{
+            alert("Por favor ingrese nuevamente su contraseña: ");
+            
+        }      
+
+
+
+
+    </script>
+</body>
+</html>
