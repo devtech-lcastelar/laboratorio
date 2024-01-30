@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con la sentencia switch</title>
+</head>
+<body>
+    <script>
+        /* La sentencia swith es usada al realizar diferentes acciones, las cuales se basan en diferentes condiciones. 
+        La condicion se evalua solo en una ocasion.
+        Si existe coincidencia con algun determinado valor, se ejecuta el bloque de codigo que corresponde. */
+
+        //El metodo getDay() nos devuelve el dia de la semana reresentado entre los numeros del 0 y 6
+        switch (new Date().getDay()) {
+            case 0:
+                console.log(Text = "Hoy es Lunes") ;                
+                break;
+            case 1:
+                console.log(Text = "Hoy es Martes") ;
+                break;
+            case 2:
+                console.log(Text = "Hoy es Miercoles") ;
+                break;
+            case 3: 
+                console.log(Text = "Hoy es Jueves") ;
+                break;
+            case 4:
+                console.log(Text = "Hoy es Viernes") ;
+                break;
+            case 5: 
+                console.log(Text = "Hoy es Sabado") ;
+                break;
+            case 6:
+                console.log(Text = "Hoy es Domingo") ;
+                break;    
+            default:
+                console.log(Text = "Deseando el dia de descanso");
+        }
+
+
+        // Otra manera de hacer este ejercicio es de la siguiente forma
+        let dia = "Lunes";
+
+        switch (dia) {
+            case "Lunes":
+                console.log("Hoy es dia lunes");                
+                break;
+            case "Martes":
+                console.log("Hoy es dia martes"); 
+                break;
+            case "Miercoles":
+                console.log("Hoy es dia miercoles"); 
+                break;
+            case "Jueves":
+                console.log("Hoy es dia jueves");
+                break; 
+            case "Viernes":
+                console.log("Hoy es dia viernes"); 
+                break;
+            case "Sabado":
+                console.log("Hoy es dia sabado"); 
+                break;
+            case "Domingo":
+                console.log("Hoy es dia domingo"); 
+                break;
+            default:
+            console.log("El valor ingresado no corresponde con el dia de la semana"); 
+        }
+
+    </script>
+</body>
+</html>
