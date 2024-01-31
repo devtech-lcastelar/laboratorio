@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con la sentencia for en Javascript</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 1. 
+        //A travez del siguiente ejercicio, relizaremos un recorrido con el ciclo for a una cadena de texto y mostraremos por consola el numero de caracteres que contenga dicho string.
+        let cadenaTexto = "Colombia tiene hermosos paisajes y una gran fauna";
+        console.log("La cadena de texto es: ", cadenaTexto);
+
+        for( let i = 0; i <= cadenaTexto.length; i++){
+            let caracter = cadenaTexto[i];           
+            console.log("El caracter ",  caracter + " corresponde al indice ", + i);
+        }  
+        
+        
+        //Ejercicio 2.
+        // Se solicita al usuario ingresar una serie de numeros, realizaremos un recorrido por dicha serie y mostraremos por pantalla la cantidad de numeros ingresados.
+
+        let serieNumeros = prompt("Favor ingresar una serie de numeros: ");
+        for( let i = 0; i <= serieNumeros.length; i++){
+            alert("Cantidad de numeros ingresados es: ")
+            alert(serieNumeros.length);
+            break;
+        }
+      
+    </script>
+</body>
+</html>
