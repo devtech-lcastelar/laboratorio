@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos especiales para manipular arreglos</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 1.
+        // En el presente ejercicio realizamos la concatenacion de dos arreglos en uno, es decir combinamos dos arreglos en uno nuevo, sin modificar los Arrays originales
+        let dispositivosNuevos = ["smartphone", "ipad", "tablet", "mp3", "laptop"];
+        let dispositivosViejos = ["reloj analogo", "tv b/negro"];
+        let dispositivosJuntos = dispositivosNuevos.concat(dispositivosViejos);
+        console.log(dispositivosJuntos)
+        console.log("----------------------------------------------------------------------")
+
+
+
+        //Ejercicio 2. 
+        // En el presente ejercicio vamos a invertir el orden de los elementos del array con el metodo reverse().
+
+        let diasSemana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+        console.log(diasSemana.reverse())
+        console.log("----------------------------------------------------------------------")
+
+
+
+        // Ejercicio 3.
+        // En el siguiente ejercicio vamos a unir los diferentes elementos de un array en un string o cadena de texto, haciendo uso del metodo join().
+
+        let arrayCadena = ["My", "madre", "es", "muy", "hermosa"];
+        let cadena = arrayCadena.join(" ")
+        console.log(cadena)
+
+
+        // Ejercicio 4.
+        //En el siguiente ejercicio vamos a convertir una cadena o string a un nuevo Array, haciendo uso del metodo split().
+
+        let expresion = "Estoy aprendiendo desarrollo web";
+        let arrayPalabras = expresion.split(" ")
+        console.log(arrayPalabras)
+
+        
+    </script>
+</body>
+</html>
