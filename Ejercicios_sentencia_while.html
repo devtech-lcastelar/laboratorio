@@ -34,24 +34,11 @@
 
 
         // Ejercicio 3.
-        // Ejercicio con bucle while anidado, mostrar por consola las tablas de multiplicar de dos numeros.
-
-        let i = 1;
-
-        while( i <= 10 ){
-            console.log("Tabla del ", i);
-            let j = 1;
-            while( j <= 10 ){
-                console.log(i, "x", j, "=", i * j);
-                j++;
-            }
-            console.log("");
-            i++
-        }  
+        // Ejercicio con bucle while anidado, mostrar por consola las tablas de multiplicar de dos numeros.              
 
         let m = 1;
         while(m <= 10){
-            console.log("Tabla del: ", m);
+            console.log("Tabla de multiplicar del: ", m);
             
             let n = 1;
             while(n <= 10){
@@ -60,9 +47,24 @@
             }
             m++
         }  
-        console.log("----------------------------------------") 
+        console.log("----------------------------------------")     
         
         
+        
+        //Ejercicio 4.
+        // Validar contraseña ingresada y mostrar mensaje por pantalla
+        let contras = "casa";
+        let clave;
+
+        while(clave != contras){
+            clave = prompt("favor ingresa la clave")
+                if(clave == contras){
+                    alert("clave ingresada es correcta")
+                }else{
+                    alert("Clave incrrecta")
+                }
+
+        }        
         
     </script>    
 </body>
