@@ -11,12 +11,19 @@
         // En el presente ejercicio evidenciamos como hacer una copia independiente de un Array sin afectar el Array original con el metodo slice()
         let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 16, 19, 22, 32, 36, 41, 44]
         let copiaNumeros = numeros.slice();
+        console.log("Aplicando metodo slice()")
         console.log(copiaNumeros)
 
 
         // De esta otra forma hacemos copia de una parte del array a uno nuevo
         let copiaValores = numeros.slice([9],[17]);
         console.log(copiaValores)
+
+
+        // Aplicando el metodo Spread operator ...
+        let nuevosNumeros = [...numeros];
+        console.log("Aplicando el metodo Spread operator ...")
+        console.log(nuevosNumeros);
     </script>
 </body>
 </html>
