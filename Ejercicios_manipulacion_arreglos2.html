@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos especiales para manipular arreglos</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 1.
+        // En el siguiente ejercicio ingresaremos elementos por teclado, se adicionaran al array con el metodo push()        
+        let array = [];               
+       
+        while(true){
+            let productos = prompt("Favor ingresa los productos: (cancela y termina) ")
+            if(productos===null || productos===""){
+                break
+            }
+            array.push(productos)            
+        }
+        console.log("Los productos agregados al array son: ", array)
+        console.log("-----------------------------------------")
+
+
+
+        // Ejercicio 2.
+        // Otra forma de agregar elementos al arreglo y mostrar su contenido
+        let valores = [2, 4, 5, 7, 8, 9];
+        valores.push(22, 44, 55, 66, 78, 99);
+        console.log(valores)
+
+        
+    </script>
+</body>
+</html>
