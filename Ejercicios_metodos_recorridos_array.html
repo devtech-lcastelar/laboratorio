@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteracion y recorrido de Arrays en javascript</title>
+</head>
+<body>
+    <script>
+        //En el presente ejercicio aplicaremos el recorrido por cada uno de los elementos de un Array llamado paisesSurAmerica, para eso usaremos los diferentes metodos para tal efecto.
+
+        // Aplicando el bucle for en el recorrido del Array
+        console.log("Aplicando bucle for: ")
+        let paisesSurAmerica = ["Colombia", "Venezuela", "Ecuador", "Peru", "Bolivia", "Chile", "Paraguay", "Uruguay", "Argentina", "Brasil"];
+        for(let i = 0; i <= paisesSurAmerica.length; i++){
+            console.log(paisesSurAmerica[i])
+        }
+
+
+        // Aplicando el metodo forEach en el recorrido del Array
+        console.log("Aplicando metodo forEach: ")
+        paisesSurAmerica.forEach(function(pais, index, Array){
+            console.log(index,[pais])
+
+        })
+
+
+        // Aplicando el bucle for...of en el recorrido del Array
+        // Con este bucle podemos iterar los elementos del Array, sin la necesidad de usar indices, propiedad length
+        console.log("Aplicando bucle for...of: ")
+        for (let pais of paisesSurAmerica){
+            console.log(pais)
+        }    
+
+    </script>
+</body>
+</html>
