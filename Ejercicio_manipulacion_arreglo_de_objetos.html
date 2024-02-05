@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion arreglo de objetos</title>      
+</head>
+<body>
+    <script>
+        let encuestaColorFavorito = [
+            {
+                nombre: "Luis",
+                colorFavorito: "Rojo",
+            },
+            {
+                nombre: "Lina",
+                colorFavorito: "Verde",                
+            },
+            {
+                nombre: "Laura",
+                colorFavorito: "Amerillo",
+            },
+            {
+                nombre: "Violeta",
+                colorFavorito: "Azul",
+            },
+            {
+                nombre: "Rosa",
+                colorFavorito: "Rosado",                
+            },
+            {
+                nombre: "Diana",
+                colorFavorito: "Verde",
+            }             
+            
+        ]           
+        encuestaColorFavorito[0] = {nombre: "Walter", colorFavorito: "Pink"};
+        encuestaColorFavorito[8] = {nombre: "Felipe", colorFavorito: "Brown"};
+        encuestaColorFavorito.push({nombre: "Jose", colorFavorito: "Negro"});            
+        console.log(encuestaColorFavorito)
+        console.log(typeof(encuestaColorFavorito))
+        
+    </script>
+</body> 
+</html>
