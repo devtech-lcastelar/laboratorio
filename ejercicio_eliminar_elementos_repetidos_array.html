@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio como eliminar elementos repetidos en un array</title>
+</head>
+<body>
+    <script> 
+        // En el presente ejercicio mostramos dos formas diferente de eliminar elementos repetidos en un array, primero usamos el metodo forEach(), y despues el metodo reduce().
+        const valores = [2, 4, 5, 6, 3, 2, 7, 8, ,9, 8, 12, 14, 16, 14]
+        let valoresUnicos = [];
+            valores.forEach((num) =>{
+                if(!valoresUnicos.includes(num)){
+                    valoresUnicos.push(num)
+                }
+            })
+            console.log(valoresUnicos)
+
+            
+            
+        //Eliminando elementos repetidos con el metodo reduce()
+        let valores2 = valores.reduce((acum, item) => {
+            if(!acum.includes(item)) {
+                acum.push(item);
+                
+        }
+        return acum;
+        },[]);
+        console.log(valores2)
+        
+        
+        
+    </script>
+</body>
+</html>
