@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio manipular y recorrer arreglo</title>
+</head>
+<body>
+    <script>
+        //Ejercicio para realizar el recorrido del arreglo y sumar los numeros de dicho array aplicando el ciclo for
+        const array = [2, 3, 4, 5, 7, 8, 9]
+
+        suma = 0;
+        for(let i = 0; i < array.length; i++){
+            suma += array[i];
+            console.log(array[i])
+        }
+        console.log("Suma array con el ciclo for es: ", suma)
+
+
+
+        // Ahora usamos el mismo Array aplicando el metodo forEach para la suma y el recorrido del arreglo
+        suma2 = 0;
+        array.forEach((numero) => {
+            suma2 += numero;
+            console.log(numero);
+        })
+        console.log("La suma del Array con el ciclo forEach es: ", suma2)
+
+
+
+        // Ahora usamos el mismo Array aplicando el metodo forin para la suma y el recorrido del arreglo
+        suma3 = 0;
+        for (const key in array) {
+            suma3 += array[key];
+            console.log(array[key]);
+        }
+        console.log("La suma del array con el ciclo forin es: ", suma3)
+        
+    </script>
+</body>
+</html>
