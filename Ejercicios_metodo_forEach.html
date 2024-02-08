@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios aplicando el metodo forEach en Arrays</title>
+</head>
+<body>
+    <script>
+             //Hacer uso del metodo forEach para recorrer el array numeros, determinar y mostrar los numeros pares por consola     
+            const numeros = [2 ,3, 7, 4, 5, 6, 8, 9];
+            suma = 0;
+
+            numeros.forEach((num)=> {
+                if (num % 2 === 0){
+                    console.log(`${num} es par`);
+                };
+            });
+
+            console.log('------------------------------------------------------------------')
+
+
+            //Hacer uso del metodo forEach para recorrer el array saludos, determinar el ancho de cada saludo y mostrar su contenido en mayusculas
+
+            const saludos = ["buenos dias", 'buenas tardes', 'buenas noches'];
+
+            saludos.forEach((saludo) => console.log (`${saludo} tiene ${saludo.length} caracteres, saludo en mayusculas, ${saludo.toUpperCase()}`))
+            console.log('-------------------------------------------------------------------')
+
+
+
+
+            //Hacer uso del metodo forEach para recorrer el array numeros, determinar y mostrar cada elemento del array multiplicado por 5 en consola 
+            numeros.forEach(function(cifra){
+                return console.log(cifra * 5)
+            })
+            console.log('-------------------------------------------------------------------')
+
+
+            // Sumando el array numeros con el metodo forEach
+            numeros.forEach((item) =>{suma += item; return console.log(suma)
+
+            })
+
+
+            
+    </script>
+</body> 
+</html>
