@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios varios con funciones</title>
+</head>
+<body>
+    <script>
+        //1. Ejercicio con funciones         
+        const productos = [];
+    function agregarProducto() {
+        const articulo = prompt("favor ingresa el articulo");
+        const precio = prompt("favor ingresa el precio");
+        const cantidad = prompt("favor ingresa la cantidad");
+        const valorVenta = precio * cantidad;
+        productos.push(articulo);
+        const pregunta = prompt("¿Quieres agregar otro articulo?");
+        if (pregunta === "si") {
+            agregarProducto();
+        };
+        console.log(`valor articulo ${articulo} es ${valorVenta}`);
+    };
+    console.log(productos);
+    agregarProducto();
+
+
+        //2. Ejercicio con funciones
+        const muestra = function(){
+            const edad = prompt("Favor ingresa tu edad:");
+            const cotizacion = prompt("Eres cotizante:")                                                       
+            
+            if(edad > 62 && cotizacion == "si" ){
+                console.log("Por favor, averigua tu saldo, ya debes tener el abono a tu cuenta");
+                muestra()
+                
+            }else{
+                console.log("Lamento decirte que no haces parte de los afortunados pensionados de este pais")
+                               
+            }     
+                       
+            
+        }        
+        muestra()
+
+
+        //3. Ejercicio con funcion flecha
+        const operacion = (compra, descuentoIva) =>{
+            const valorcompra = compra - (compra * descuentoIva);
+            return valorcompra
+        }
+        console.log(operacion(2800, .16))
+    </script>
+</body>
+</html>

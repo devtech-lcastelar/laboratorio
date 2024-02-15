@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con el metodo </map></title>
+</head>
+<body>
+    <script>
+        const productos = [
+            {ref: "cuaderno", color: "blanco", precio: 300},
+            {ref: "libro", color: "negro", precio: 900},
+            {ref: "morral", color: "rojo", precio: 40000},
+            {ref: "boligrafo", color: "verde", precio: 100}
+        ]
+
+        const articulos = productos.map(function(articulo, index, array){  
+            if(articulo.precio > 300){
+                let descuento = articulo.precio - (articulo.precio * .50)
+                console.log(descuento)
+
+            }         
+            console.log(`${articulo.ref} cuesta ${(articulo.precio + articulo.precio * .12 )}`)
+            
+        })          
+        
+        console.log(productos)
+
+
+        const alumnos = [
+            {correo: 'lucas@yaHoo.com'},
+            {correo: 'LiliaNa@GMAIL.com'},
+            {correo: 'Patry@HOTMAIL.com'},
+            {correo: 'luisa@YaHoo.com'},
+        ]
+        const serializedAlumnos = alumnos.map(function (alumno){
+            alumno.correo = alumno.correo.toLocaleLowerCase();
+            return alumno;
+        })
+        console.log(serializedAlumnos)
+    </script>
+</body>
+</html>
